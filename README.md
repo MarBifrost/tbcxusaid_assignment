@@ -8,6 +8,7 @@ This project is a recreated version of the TBC Academy's webpage for a specific 
 
 
 ## Project Structure
+```
 
 |   data.js
 |   data.json
@@ -51,6 +52,7 @@ This project is a recreated version of the TBC Academy's webpage for a specific 
 |           youtube_icon.webp
 |
 \---css
+```
         main.css
 
 ## Technologies Used
