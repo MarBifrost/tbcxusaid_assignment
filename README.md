@@ -56,10 +56,12 @@ This project is a recreated version of the TBC Academy's webpage for a specific 
         main.css
 
 ## Technologies Used
+```
 **HTML**: Used for structuring the content of the web application.
 **CSS & Responsive Design**: For styling the web page and making it responsive to different screen sizes using media queries.
 **JavaScript (ES6)**: For creating dynamic and interactive user experiences. 
 **Git**: For source code management.
+```
 
 
 ##Data Handling
