@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+  <!-- Meta tags for for charset, viewports, keywords and etc -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TBC x USAID Technology Education Program">
+  <meta name="keywords" content="TBC, USAID, Education, Technology">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Stylesheet Link -->
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Title and favicon for the page -->
+  <title>TBC x USAID</title>
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+</head>
+
+<body>
+  <!-- Header section with navigation -->
+  <header>
+    <!-- Main navigation bar -->
+    <nav aria-label="Main navigation" class="nav_center">
+      <!-- Logo amdn main navigation -->
+      <div class="nav_heading">
+        <a href="/" target="_blank">
+          <img src="./assets/images/tbc_academy.svg" alt="TBC_LOGO" class="tbc_acad_logo">
+        </a>
+      </div>
+      <!-- Navigation links and indivitual items -->
+      <ul class="nav_list">
+        <li>
+          <a href="" class="nav_link">მთავარი</a>
+        </li>
+        <li>
+          <a href="" class="nav_link">TBC IT</a>
+        </li>
+        <li>
+          <a href="/" class="nav_link">TBC x USAID</a>
+        </li>
+        <li>
+          <a href="" class="nav_link">რისკები</a>
+        </li>
+      </ul>
+      <!-- Hamburger menu for mobile view -->
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <!-- Main content of the page -->
+  <main>
+    <!-- Introductino section with cover image and text -->
+    <section class="cover_intro">
+      <h1 class="text_on_cover">
+        <span>tbc x usaid</span><br>
+        ᲢᲔᲥᲜᲝᲚᲝᲒᲘᲣᲠᲘ ᲒᲐᲜᲐᲗᲚᲔᲑᲘᲡᲗᲕᲘᲡ
+      </h1>
+    </section>
+    <!-- Description section with text -->
+    <article class="text_under_cover">
+      <div>
+        <h2 class="description">
+          „ TBC x USAID - ტექნოლოგიური განათლებისთვის “ პროგრამა საინფორმაციო
+          ტექნოლოგიებით დაინტერესებულ ადამიანებს გთავაზობთ სრულად დაფინანსებულ
+          ონლაინ საგანმანათლებლო პრაქტიკულ კურსებს სხვადასხვა ICT
+          მიმართულებით. წარმატებულ კურსდამთავრებულებს ეძლევათ შესაძლებლობა
+          დასაქმდნენ თიბისისა და მის პარტნიორ კომპანიებში.
+        </h2>
+        <a href="" class="learn_more_link">
+          <span>გაიგე მეტი</span>
+        </a>
+      </div>
+    </article>
+    <!-- Training courses showcasing section 
+    Description: Dynamically loads and displays training courses from data.json using data.js script-->
+    <div class="training_courses">
+      <p>სასწავლო კურსები</p>
+    </div>
+    <section id="courses" class="courses"></section>
+    <!-- Slider section for partners -->
+    <section class="container_for_slider">
+      <h2 class="partners_section_header">პროექტის პარტნიორები</h2>
+      <!-- Slideshow for partner companies logos -->
+      <div class="slideshow_container">
+        <!-- Individual slide items  -->
+        <div class="item_list fade">
+          <img src="./assets/images/usaid.webp" alt="usaid img" class="usaid_logo">
+          <img src="./assets/images/white_horiz.webp" alt="space img" class="space_logo">
+          <img src="./assets/images/tnt.webp" alt="tnt img" class="tnt logo">
+        </div>
+        <div class="item_list fade">
+          <img src="./assets/images/tgt.webp" alt="tegeta img" class="tegeta_logo">
+          <img src="./assets/images/spectre.webp" alt="spectre img" class="spectre_logo">
+          <img src="./assets/images/tbc_lsng.webp" alt="tbc leasing img" class="tbclsng_logo">
+        </div>
+        <div class="item_list fade">
+          <img src="./assets/images/UFC_GEO.webp" alt="ufc img" class="ufc_logo">
+        </div>
+      </div>
+      <!-- Navigation buttons for the slideshow -->
+      <button id="prev_btn" class="prev_btn" onclick="plusSlides(-1)">
+        <img src="./assets/images/left_right.svg" alt="prev_btn">
+      </button>
+      <button id="next_btn" class="next_btn" onclick="plusSlides(1)">
+        <img src="./assets/images/left_right.svg" alt="next_btn">
+      </button>
+      <!-- Dot indicators for the slideshow -->
+      <div class="dot_indicators">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    <!-- FAQ section-->  
+    </section>
+    <section class="questions_container">
+      <div class="questions_header">
+        <h2>ხშირად დასმული კითხვები</h2>
+        <a href="" target="_blank">ყველა კითხვა</a>
+      </div>
+      <div class="faq">
+        <!-- Individual questions and answers -->
+        <p class="question" id="q1">
+          როგორ ხდება კურსებზე რეგისტრაცია და შერჩევა?<img src="./assets/images/down-arrow.svg" alt="arrow"
+            class="arw_dwn">
+        </p>
+        <div class="answer hidden-data" id="a1">
+          კურსზე რეგისტრაციისთვის უნდა გაიარო რამდენიმე ეტაპი:<br><br>
+          <h3>
+            <span>I ეტაპი</span> - პირველ ეტაპზე საჭიროა, შეავსო სასურველი
+            კურსისთვის განკუთვნილი სარეგისტრაციო ფორმა, რომელიც განთავსებულია
+            კურსის შიდა გვერდზე. კურსზე რეგისტრაციის დასრულების შემდეგ
+            დაიწყება შემოსული განცხადებების გადარჩევა.<br><br>
+            <span>II ეტაპი</span> - შერჩევის მეორე ეტაპი კურსების მიხედვით
+            განსხვავებულია, ზოგიერთი კურსისთვის მოიცავს პრე-ტესტს, ზოგიერთ
+            კურსზე კი უნარების ტესტს, სადაც მინიმალური ზღვარის გადალახვის
+            შემთხვევაში გადახვალ შერჩევის შემდეგ ეტაპზე.<br><br>
+            <span>III ეტაპი</span> - მესამე ეტაპი კურსების მიხედვით
+            განსხვავდება: Advance კურსებზე, სადაც მოითხოვება გარკვეული
+            ტექნიკური ცოდნა, მონაწილეებმა უნდა დაწერონ ტექნიკური ტესტი ცოდნის
+            დონის შესამოწმებლად, ხოლო კურსებზე, სადაც რაიმე ტიპის წინასწარი
+            ცოდნა მოთხოვნილი არ არის უნდა შეასრულოთ ტექნიკური დავალება, რაც
+            თქვენი კვლევისა და თვითსწავლის უნარს ამოწმებს.<br><br>
+            <span>IV ეტაპი</span> - შერჩევის ბოლო მეოთხე ეტაპი მოიცავს
+            გასაუბრებას შესარჩევ კომისიასთან. გასაუბრების წარმატებით გავლის
+            შემთხვევაში ჩაირიცხებით კურსზე და გაფორმდება შესაბამისი
+            ხელშეკრულება.
+          </h3>
+          <br><br>
+          <p>
+            * სანამ კურსზე დარეგისტრირდები მნიშვნელოვანია, ყურადღებით წაიკითხო
+            კურსის აღწერა, ნახო რას ისწავლი კურსის განმავლობაში და გაიგო
+            გააჩნია თუ არა კურსს დასწრების წინაპირობა.
+          </p>
+        </div>
+        <div class="lines"></div>
+        <p class="question" id="q2">
+          შემიძლია თუ არა ერთზე მეტ კურსზე რეგისტრაცია?<img src="./assets/images/down-arrow.svg" alt="arrow"
+            class="arw_dwn">
+        </p>
+        <div class="answer hidden-data" id="a2">
+          TBC X USAID ტექნოლოგიური განათლებისთვის პროგრამაში თითოეულ კანდიდატს
+          აქვს მხოლოდ ერთი კურსის გავლის შესაძლებლობა. გარდა Information
+          Security და Python კურსებისა, სადაც Basic დონის გავლის შემდეგ
+          შესაძლებელია სწავლის გაგრძელება Advance დონეზე.
+        </div>
+        <div class="lines"></div>
+        <p class="question" id="q3">
+          რა ღირს სწავლა პროგრამის ფარგლებში?<img src="./assets/images/down-arrow.svg" alt="arrow" class="arw_dwn">
+        </p>
+        <div class="answer hidden-data" id="a3">
+          პროგრამის ფარგლებში კურსებზე სწავლა სრულიად დაფინანსებულია თიბისი
+          ბანკისა და USAID-ის მიერ.
+        </div>
+        <div class="lines"></div>
+      </div>
+      <a href="" target="_blank" class="all_questions_mobile">ყველა კითხვა</a>
+    </section>
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <div class="footer_body">
+      <!-- Footer content -->
+      <div class="footer_part1">
+        <img src="./assets/images/TBC_LOGO.webp" alt="TBC_LOGO" class="tbc_logo_footer">
+        <div class="resp_text">
+          <span class="rigths">&copy;2023 ყველა უფლება დაცულია</span>
+          <a href="">წესები და პირობები</a>
+        </div>
+      </div>
+      <div class="footer_part2">
+        <div class="icons">
+          <img src="./assets/images/youtube_icon.webp" alt="youtube_icon" class="icon">
+          <img src="./assets/images/facebook_icon.webp" alt="facebook_icon" class="icon">
+        </div>
+        <button class="footer_btn">მოგვწერეთ</button>
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript files -->
+  <script src="./data.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>

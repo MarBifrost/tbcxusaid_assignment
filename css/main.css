@@ -1,0 +1,1121 @@
+/* ==========================================
+global styles and variables
+=========================================== */
+
+
+/* Custom font faces */
+
+@font-face {
+  font-family: tbc_x;
+  src: url(../assets/fonts/orig_tbc_x_regular.woff);
+}
+
+@font-face {
+  font-family: tbc_x_bold;
+  src: url(../assets/fonts/orig_tbc_x_regular_bold.woff2);
+}
+
+@font-face {
+  font-family: orig_tbc_bold;
+  src: url(../assets/fonts/orig_tbc_silec_bold.woff2);
+}
+
+@font-face {
+  font-family: tbc_bold;
+  src: url(../assets/fonts/tbc-bold.woff2);
+}
+
+/* Root custom properties for color and font themes */
+
+:root {
+  /*Color variables*/
+  --color-for-body-black-: #161616;
+  --color-dark-gray: #1a1e1f;
+  --color-gray: #645f5f;
+  --color-light-gray: #dfd6d6;
+  --color-dark-white: #b6b1b6;
+  --color-white: #f4f4f4;
+  --color-blue: #00a3e0;
+  --color-bright-blue: #00aef3;
+  --color-dark-blue: #068dbf;
+  --color-background-gray: #2b2b2b;
+  --color-background-for-header-black: #222222;
+  /*Font family variables*/
+  --font-tbc-x: tbc_x, sans-serif;
+  --font-tbc-x-bold: tbc_x_bold, sans-serif;
+  --font-orig-tbc-bold: orig_tbc_bold, sans-serif;
+  --font-tbc_bold: tbc_bold, sans-serif;
+}
+
+/* =================================
+custom reset
+================================== */
+
+/*General reset for most elements*/
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+html {
+  font-size: 62%;
+}
+
+/* Reset for links and buttons */
+a,
+button {
+  cursor: revert;
+}
+
+/* Box model reset for all elements */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Similar reset styles for some elements */
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  text-align: center;
+  background-color: var(--color-for-body-black-);
+}
+
+/* Header and navigation styling */
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-background-for-header-black);
+  opacity: 0.9;
+  height: 84px;
+  z-index: 1;
+}
+
+/* nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 974px;
+  width: 90vw;
+  gap: 370px;
+  box-sizing: border-box;
+} */
+
+
+
+
+.nav_center {
+  height: 84px;
+  max-width: 980px;
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.nav_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* Navigation menu styling */
+.nav_list {
+  display: flex;
+  gap: 3rem;
+  font-family: tbc_x;
+  font-size: 14px;
+  color: var(--color-light-gray);
+  max-width: 450px;
+  height: 20px;
+}
+
+.nav_list a {
+  white-space: nowrap;
+}
+
+/* ===============================
+Logo styling 
+=================================*/
+
+.tbc_acad_logo {
+  width: 184px;
+  height: 43px;
+  display: block;
+}
+
+.tbc_logo_footer {
+  width: 106px;
+  height: 30px;
+}
+
+.spectre_logo {
+  width: 187px;
+  height: 64px;
+}
+
+.ufc_logo {
+  width: 227px;
+  height: 64px;
+}
+
+.tnt_logo {
+  width: 250px;
+  height: 45px;
+}
+
+.tbclsng_logo {
+  width: 312px;
+  height: 95px;
+}
+
+.usaid_logo,
+.tegeta_logo,
+.space_logo {
+  width: 248px;
+  height: 71px;
+}
+
+
+/* Hover effects for navigation menu */
+.nav_link:hover {
+  color: var(--color-blue);
+}
+
+.nav_link:active {
+  color: var(--color-blue);
+}
+
+/* Hides the hamburger menu for the larger screens */
+.hamburger {
+  display: none;
+}
+
+header, main,
+.cover_intro, 
+.text_under_cover, 
+.container_for_slider, 
+footer {
+  width: 100%;
+}
+
+
+/* ===============================
+Main content styling
+===============================*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling properties for cover part */
+
+.cover_intro {
+  background-image: url("../assets/images/cover_photo.webp");
+  height: 352px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 84px;
+}
+
+.text_on_cover {
+  align-self: center;
+  font-family: var(--font-tbc_bold);
+  color: var(--color-light-gray);
+  font-size: 34px;
+  line-height: 1.6em;
+  font-weight: 600;
+  margin-right: 305px;
+  margin-top: -35px;
+  text-align: left;
+}
+
+.text_on_cover span {
+  font-size: 42px;
+  font-weight: 600;
+  width: 276.11px;
+  height: 60.8px;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+
+.text_under_cover {
+  display: flex;
+  justify-content: center;
+  height: 464.8px;
+  background-color: var(--color-background-gray);
+}
+
+.description {
+  font-family: var(--font-tbc-x);
+  color: var(--color-light-gray);
+  font-size: 28px;
+  line-height: 44px;
+  text-align: left;
+  width: 975px;
+  height: 265px;
+  margin-top: 55px;
+  margin-left: -10px;
+}
+
+.learn_more_link span {
+  font-family: orig_tbc_bold;
+  color: var(--color-bright-blue);
+  font-size: 20px;
+  font-weight: 700;
+  float: left;
+  margin-top: 57px;
+  margin-left: -10px;
+}
+
+/* Grid styling for the part about courses */
+
+.grid_container {
+  width: 300px;
+  height: 414px;
+  background-color: var(--color-black);
+  border-radius: 7px;
+  border: 1px solid #414040;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.grid_container:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.imgs {
+  width: 300px;
+  height: 150px;
+  border-radius: 5px 5px 0 0;
+}
+
+.crs_covers {
+  width: 300px;
+  height: 150px;
+  border-radius: 7px 7px 0 0;
+}
+
+.upper_text_in_box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 35px;
+  margin-left: 20px;
+  gap: 30px;
+}
+
+.bottom_text_in_box {
+  display: flex;
+  padding: 20px;
+}
+
+.course_name {
+  text-align: left;
+  width: 220px;
+  font-family: tbc_x;
+  font-size: 18px;
+  color: var(--color-light-gray);
+}
+
+.reg_over {
+  font-family: tbc_x;
+  font-size: 14px;
+  color: var(--color-light-gray);
+}
+
+.arrow {
+  width: 16px;
+  height: 13px;
+  margin-top: 7px;
+  filter: invert(45%) sepia(89%) saturate(1337%) hue-rotate(163deg) brightness(99%) contrast(101%);
+}
+
+.details_about_courses {
+  font-family: tbc_x_bold;
+  color: #00aeef;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+}
+
+.details_about_courses:hover {
+  color: var(--color-dark-blue);
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 27px;
+  grid-column-gap: 40px;
+  padding: 55px 0;
+}
+
+.box_span {
+  float: left;
+}
+
+.courses:nth-child(5) {
+  margin-left: 50px;
+}
+
+/* Slideshow styling */
+
+.partners_section_header {
+  width: 850px;
+  margin-top: 35px;
+  margin-left: -135px;
+  text-align: start;
+  font-family: tbc_x_bold;
+  font-size: 24px;
+  color: var(--color-light-gray);
+}
+
+.training_courses {
+  margin-top: 35px;
+  font-family: tbc_x_bold;
+  color: var(--color-light-gray);
+  font-size: 24px;
+  width: 974px;
+  text-align: left;
+
+}
+
+
+.container_for_slider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-background-gray);
+  height: 363px;
+}
+
+.slideshow_container {
+  margin-top: 26px;
+}
+
+/* Navigation buttons styling */
+.prev_btn,
+.next_btn {
+  position: absolute;
+  top: 50%;
+  width: 18px;
+  height: 35px;
+  filter: invert(100%) sepia(0%) saturate(5897%) hue-rotate(358deg) brightness(115%) contrast(87%);
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+}
+
+/* Positioning and hover styling of individual buttons */
+.prev_btn {
+  left: 100px;
+}
+
+.next_btn {
+  transform: rotate(180deg);
+  right: 100px;
+}
+
+.prev_btn:hover,
+.next_btn:hover {
+  filter: invert(41%) sepia(7%) saturate(1031%) hue-rotate(188deg) brightness(94%) contrast(86%);
+}
+
+/* Dot indicators styling */
+.dot {
+  cursor: pointer;
+  height: 6px;
+  width: 6px;
+  background-color: var(--color-light-gray);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin: 6px;
+}
+
+/* Style of active dots or on hover */
+.dot:hover{
+  background-color: var(--color-dark-white);
+}
+
+.dot:active{
+  background-color: var(--color-white);
+}
+
+
+/* Fade animation*/
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* Slideshow item list styling */
+
+.item_list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: 120px;
+  width: auto;
+  margin-right: -100px;
+  transition: all 1s ease-out;
+}
+
+.item_list img {
+  margin-right: 100px;
+}
+
+.questions_container {
+  margin: 75px 0;
+}
+
+/* FAQ styling */
+
+.questions_header h2 {
+  color: var(--color-light-gray);
+  font-size: 24px;
+  font-family: var(--font-tbc-x);
+  line-height: 28px;
+}
+
+.questions_header a {
+  color: var(--color-bright-blue);
+  font-size: 20px;
+  font-family: var(--font-orig-tbc-bold);
+  line-height: 28px;
+}
+
+.questions_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 46px 10px 46px 22px;
+}
+
+/* Hidden answers styling */
+.hidden-data {
+  display: none;
+}
+
+.all_questions_mobile {
+  display: none;
+}
+
+.answer {
+  color: var(--color-light-gray);
+  font-family: var(--font-tbc-x);
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: left;
+  line-height: 1.6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.answer span {
+  font-weight: 600;
+}
+
+.answer h3 {
+  margin-top: 3px;
+  margin-left: 15px;
+  line-height: 1.6em;
+}
+
+.answer p {
+  margin-left: -5px;
+}
+
+.faq {
+  width: 890px;
+  margin: 25px;
+  margin-top: 40px;
+}
+
+dl {
+  margin-left: 20px;
+}
+
+.question {
+  color: var(--color-light-gray);
+  font-family: var(--font-tbc-x);
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: left;
+  line-height: 1.6;
+  cursor: pointer;
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Lines styling */
+
+.lines {
+  width: 910px;
+  height: 0.3px;
+  background-color: #dbdbdb;
+  opacity: 0.3;
+  margin: 30px 0;
+}
+
+.arw_dwn {
+  width: 15px;
+  height: 15px;
+  filter: invert(99%) sepia(100%) saturate(99%) hue-rotate(173deg) brightness(115%) contrast(91%);
+}
+
+/* footer styling*/
+
+footer {
+  height: 228px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-dark-gray);
+}
+
+.footer_body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 974px;
+  height: 228px;
+}
+
+.footer_part1,
+.footer_part2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+  font-family: var(--font-tbc-x);
+  color: var(--color-light-gray);
+  font-size: 14px;
+}
+
+.resp_text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.rigths {
+  cursor: pointer;
+}
+
+.icons {
+  height: 65px;
+  overflow: hidden;
+}
+
+.icon {
+  width: 39px;
+  margin: 5px;
+  float: right;
+  cursor: pointer;
+}
+
+/* Hover effect for footer button */
+
+.footer_btn {
+  font-size: 16px;
+  background-color: var(--color-bright-blue);
+  padding: 7px;
+  width: 162px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.footer_btn:hover {
+  background-color: var(--color-light-gray);
+  color: var(--color-background-for-header-black);
+}
+
+/*==============================
+Mobile styles (up to 480px)
+================================*/
+
+@media screen and (width < 480px) {
+
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+
+  header, 
+  .cover_intro, 
+  .text_under_cover, 
+  .container_for_slider, 
+  .training_courses, 
+  .questions_container, 
+  .footer_body {
+    width: 100%;
+  }
+
+  header {
+    height: 69px;
+    padding: 10px;
+  }
+
+
+
+  .nav_list {
+    display: none;
+    margin-top: -5px;
+
+  }
+
+  .nav_link {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    font-size: 12px;
+    color: var(--color-white);
+    margin: 32px 10px;
+    top: 50px;
+
+
+  }
+
+
+  /* Hamburger menu styling */
+
+  .hamburger {
+    position: fixed;
+    display: block;
+    cursor: pointer;
+    margin-left: 290px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    right: 5rem;
+
+  }
+
+  .bar:nth-child(1),
+  .bar:nth-child(3) {
+    width: 11px;
+  }
+
+
+  .bar:nth-child(3) {
+    margin-left: 15px;
+
+  }
+
+
+  .nav_list.active {
+    display: block;
+    position: absolute;
+    background-color: var(--color-background-for-header-black);
+    width: 20rem;
+    height: 90rem;
+    margin-left: 14.2rem;
+    margin-top: 90rem;
+    padding-right: 1rem;
+
+
+  }
+
+  .bar {
+    display: block;
+    width: 26px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--color-white);
+  }
+
+  /* adjusts hamburgers lines sizes */
+  .hamburger:nth-child(1),
+  .hamburger:nth-child(3) {
+    width: 5px;
+  }
+
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    width: 26px;
+    margin-left: 1px;
+    transform: translateY(7px) rotate(45deg);
+    background-color: var(--color-gray);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    width: 26px;
+    margin-left: 1px;
+    transform: translateY(-8px) rotate(-45deg);
+    background-color: var(--color-gray);
+  }
+
+
+
+  .tbc_acad_logo {
+    position: fixed;
+    width: 130px;
+    height: 29px;
+    margin-top: -15px;
+  }
+
+  .cover_intro {
+    margin-top: 69px;
+  }
+
+  .cover_intro,
+  .text_under_cover {
+    height: 217px;
+  }
+
+  .text_on_cover {
+    width: 280px;
+    height: 117px;
+    font-size: 22px;
+    margin-left: 70%;
+  }
+
+  .text_on_cover span {
+    font-size: 24px;
+  }
+
+  .text_under_cover {
+    height: 477px;
+  }
+
+  .description,
+  .learn_more_link span {
+    font-size: 16px;
+    width: 279px;
+    height: 330px;
+    line-height: 1.6em;
+    text-align: left;
+  }
+
+  .description {
+    margin-top: 30px;
+  }
+
+  .training_courses {
+    font-size: 24px;
+    margin-top: 90px;
+    z-index: 100;
+  }
+
+
+  .grid_container {
+    width: 280px;
+    height: 290px;
+  }
+
+  .courses {
+    grid-template-columns: 1fr;
+    padding: 20px 0;
+  }
+
+  .crs_covers {
+    width: 280px;
+    height: 140px;
+  }
+
+  .upper_text_in_box,
+  .bottom_text_in_box {
+    font-size: 14px;
+    height: 80px;
+    margin-top: 10px;
+    padding: 2px;
+  }
+
+  .bottom_text_in_box {
+    margin-left: 20px;
+  }
+
+  .upper_text_in_box>*:not(:nth-child(5)):not(:nth-child(9)) {
+    margin-top: 5px;
+  }
+
+  .training_courses {
+    margin-left: 10rem;
+    margin-top: 1.5rem;
+  }
+
+  .upper_text_in_box {
+    gap: 6px;
+  }
+
+  .container_for_slider {
+    height: 371px;
+  }
+
+
+
+
+  .item_list img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 232px;
+    margin-left: -10px;
+    overflow: visible;
+  }
+
+  .item_list:nth-child(1),
+  .item_list:nth-child(2) {
+    margin-top: -100px;
+  }
+
+
+
+
+  .partners_section_header {
+    position: absolute;
+    font-size: 18px;
+    text-align: center;
+    margin-top: -300px;
+    margin-left: -30px;
+  }
+
+  .dot_indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+
+  .next_btn,
+  .prev_btn {
+    display: none;
+  }
+
+
+
+  .questions_container {
+    margin-top: -10px;
+
+  }
+
+  .question {
+
+    font-size: 16px;
+    width: 270px;
+  }
+
+  .questions_header h2 {
+
+    text-align: left;
+    font-size: 20px;
+
+  }
+  .questions_header {
+    display: block;
+  }
+
+  /*Hides element for the smaller screens*/
+  .questions_header a {
+    display: none;
+  }
+
+  .all_questions_mobile {
+    display: block;
+    color: var(--color-bright-blue);
+    font-size: 16px;
+    font-family: var(--font-orig-tbc-bold);
+    margin-top: 30px;
+  }
+
+  .answer {
+    width: 262px;
+  }
+
+  .answer h3 {
+    margin-left: -2px;
+  }
+
+  .lines {
+    width: 270px;
+  }
+
+  .footer_body {
+    /* Adjust footer body */
+    padding: 20px;
+    margin-top: 10px;
+    align-items: flex-start;
+  }
+
+  .icons {
+    margin-top: 43px;
+    padding: 10px 0;
+  }
+
+  .footer_btn {
+    position: absolute;
+    margin-top: 5.5rem;
+    margin-left: -23rem;
+  }
+
+  .resp_text {
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+    line-height: 1.6em;
+    margin-top: 120px;
+    width: 300px;
+  }
+}
+
+/*==============================
+Mobile styles (up to 769px)
+================================*/
+@media screen and (width > 481px) and (width < 768px) {
+
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    width: 100%;
+  }
+
+
+  .questions_container,
+  .questions_header a,
+  .questions_header,
+  .footer_body,
+  .nav-heading, 
+  .description, 
+  .item_list, 
+  .arw_dwn,
+  .faq {
+    width: 100%;
+  }
+
+  .nav_list {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+
+
+  .text_on_cover {
+    margin-right: 30px;
+  }
+
+  .description {
+    margin-left: 20px;
+    font-size: 24px;
+  }
+
+  .learn_more_link span {
+    margin-left: 20px;
+  }
+
+  .training_courses {
+    text-align: center;
+  }
+
+  .courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .next_btn,
+  .prev_btn {
+    display: none;
+  }
+
+  .partners_section_header {
+    margin-left: 200px;
+    margin-top: -10px;
+  }
+
+  .item_list {
+    margin-left: -40px;
+  }
+
+  .item_list img {
+    width: 240px;
+  }
+
+  .ufc_logo {
+    margin-left: -100px;
+  }
+
+
+  .lines,
+  .answer {
+    width: 700px;
+  }
+
+  .arw_dwn {
+    margin-top: 20px;
+  }
+
+  #a1 p {
+    margin-left: 5px;
+  }
+
+  #q3 .arw_dwn {
+    margin-left: 65px;
+  }
+
+  .footer_body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+}

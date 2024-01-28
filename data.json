@@ -1,0 +1,66 @@
+[
+    {
+        "imageSrc": "./assets/images/TBC_iOS.webp",
+        "text1": "iOS Development",
+        "text2": "რეგისტრაცია დასრულებულია",
+        "obj": "./assets/images/arrw.svg",
+        "text3": "კურსის დეტალები"
+    },
+    {
+        "imageSrc": "./assets/images/TBC_REACT.webp",
+        "text1": "React",
+        "text2": "რეგისტრაცია დასრულებულია",
+        "obj": "./assets/images/arrw.svg",
+        "text3": "კურსის დეტალები"
+    },
+    {
+        "imageSrc": "./assets/images/python_intro.webp",
+        "text1": "Intro to Python",
+        "text2": "რეგისტრაცია დასრულებულია",
+        "obj": "./assets/images/arrw.svg",
+        "text3": "კურსის დეტალები"
+    },
+    {
+        "imageSrc": "./assets/images/advanced_python.webp",
+        "text1": "Advanced Python",
+        "text2": "რეგისტრაცია დასრულებულია",
+        "obj": "./assets/images/arrw.svg",
+        "text3": "კურსის დეტალები"
+    },
+    {
+        "id": "fifth_child",
+        "imageSrc": "./assets/images/adv_cybersec.webp",
+        "text1": "Advanced Cybersecurity Course",
+        "text2": "რეგისტრაცია დასრულებულია",
+        "obj": "./assets/images/arrw.svg",
+        "text3": "კურსის დეტალები"
+    },
+    {
+        "imageSrc": "./assets/images/training_of_trainers.webp",
+        "text1": "ToT - Training of Trainers",
+        "text2": "რეგისტრაცია დასრულებულია",
+        "obj": "./assets/images/arrw.svg",
+        "text3": "კურსის დეტალები"
+    },
+    {
+        "imageSrc": "./assets/images/blockchain.webp",
+        "text1": "Blockchain",
+        "text2": "რეგისტრაცია დასრულებულია",
+        "obj": "./assets/images/arrw.svg",
+        "text3": "კურსის დეტალები"
+    },
+    {
+        "imageSrc": "./assets/images/DevOps.webp",
+        "text1": "DevOps",
+        "text2": "რეგისტრაცია დასრულებულია",
+        "obj": "./assets/images/arrw.svg",
+        "text3": "კურსის დეტალები"
+    },
+    {
+        "imageSrc": "./assets/images/inform_sec.webp",
+        "text1": "Information Security Governance",
+        "text2": "რეგისტრაცია დასრულებულია",
+        "obj": "./assets/images/arrw.svg",
+        "text3": "კურსის დეტალები"
+    }
+]
