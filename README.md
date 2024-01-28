@@ -61,11 +61,13 @@ This project is a recreated version of the TBC Academy's webpage for a specific 
 **CSS & Responsive Design**: For styling the web page and making it responsive to different screen sizes using media queries.
 **JavaScript (ES6)**: For creating dynamic and interactive user experiences. 
 **Git**: For source code management.
+
+##Data Handling
+**JSON**: Used for storing and exchanging data.
 ```
 
 
-##Data Handling
-**JSON**: Used for storing and exchanging data. 
+ 
 
 
 ## How to Launch the Webpage
