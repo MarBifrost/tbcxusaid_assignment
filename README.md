@@ -64,22 +64,11 @@ This project is a recreated version of the TBC Academy's webpage for a specific 
 
 ##Data Handling
 **JSON**: Used for storing and exchanging data. 
+
+
 ## How to Launch the Webpage
-Before you begin, ensure you have the following installed:
--[Git] (https://git-scm.com/downloads) for cloning the repository
--[Node.js and npm] (https://nodejs.org/en/download)
+### Links
 
+- [Github Repo](https://github.com/MarBifrost/tbcxusaid_assignment)
 
-##To clone the repository, follow these steps:
-1. **Open Git Bash** and navigate to the directory where you want to clone the project
-2. **Clone the repository**:
-git clone https://github.com/MarBifrost/tbcxusaid_assignment
-
-3. Navigate to the project directory:
-cd tbcxusaid_assignment
-
-4. install dependencies:
-npm install
-
-5. run the application:
-npm run dev
+- [Live](https://marbifrost.github.io/tbcxusaid_assignment/)
